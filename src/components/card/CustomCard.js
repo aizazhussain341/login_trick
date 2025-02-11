@@ -175,9 +175,22 @@ export default function BasicCard() {
             >
               {loading ? "Saving..." : "Log in"}
             </Button>
+            <br></br>
+            <p
+              style={{
+                Color: "#FF4E56",
+              }}
+            >
+              Forget Password?
+            </p>
           </div>
         </CardContent>
       </Card>
+      <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
+        <Alert severity="error" variant="filled" sx={{ width: "100%" }}>
+          Invalid Email or Password
+        </Alert>
+      </Snackbar>
       <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
         <Alert severity="error" variant="filled" sx={{ width: "100%" }}>
           Invalid Email or Password
